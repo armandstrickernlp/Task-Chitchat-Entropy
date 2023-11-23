@@ -7,7 +7,7 @@ This project compares the effect of enhancing task-oriented dialogues with diffe
 
 This project uses Python 3.9+
 
-Create a virtual env with conda:
+Create a virtual environment:
 
 ```bash
 conda create -n task_chitchat_div python=3.9
@@ -21,8 +21,10 @@ pip install -r requirements.txt
 ```
 
 ## Compare lexical diversity and divergence
-Functions for extracting task and chitchat utterances are in the `load_utts.py` script. In Accentor, chitchat is presented via several candidates for each utterance.  Prior to loading the data, we therefore randomly pick a chitchat candidate to augment each turn, when possible, using the `generate_accentor_seeds.py` script. 
+Functions for extracting task and chitchat utterances are in the `load_utts.py` script. In Accentor, chitchat is presented via several candidates for each utterance. Therefore, prior to loading the data, we randomly pick a chitchat candidate to augment each turn, when possible, using the `generate_accentor_seeds.py` script.  
+
 The serialized extracted utterances are available in the `utt_data` repository.  
+
 To reproduce comparison plots and results from the paper simply run the following command:
 
 ```bash
