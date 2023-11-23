@@ -1,4 +1,7 @@
 # Enhancing Task-Oriented Dialogues with Chitchat: a Comparative Study Based on Lexical Diversity and Divergence
+This project compares the effect of enhancing task-oriented dialogues with different types of chitchat strategies. Metrics used are entropy-based and measure the lexical diversity and divergence brought on by the chitchat enhancements. The project relies on the following datasets: [Accentor](https://github.com/facebookresearch/accentor), [KETOD](https://github.com/facebookresearch/ketod) and [FusedChat](https://github.com/tomyoung903/FusedChat).  These datasets are all open-source and can be freely downloaded. 
+
+
 
 ## Requirements:
 
@@ -10,29 +13,20 @@ Create a virtual env with conda:
 conda create -n task_chitchat_div python=3.9
 ```
 
-Install the requirements (inside the project folder):
-```bash
-git clone git@github.com
-cd TaskChitchatDiv
+Install the requirements:
+```bas
+git clone git@github.com:armandstrickernlp/Task_Chitchat_Diversity.git
+cd Task_Chitchat_Diversity
 pip install -r requirements.txt
 ```
 
 ## Compare lexical diversity and divergence
-WE compare 
-The utterances used as input
-To obtain the plots from the paper simply run the following command:
+Functions for extracting task and chitchat utterances are in the `load_utts.py` script. In Accentor, chitchat is presented via several candidates for each utterance.  Prior to loading the data, we therefore randomly pick a chitchat candidate to augment each turn, when possible, using the `generate_accentor_seeds.py` script. 
+The serialized extracted utterances are available in the `utt_data` repository.  
+To reproduce comparison plots and results from the paper simply run the following command:
 
 ```bash
 python compare_diversity_divergence.py
 ```
 
 This will generate the plots in the `plots` folder.
-
-
-## Data
-Datasets used for this study include FusedChat, Accentor and KETOD.
-
-Once the datasets are downloaded, `generate_accentor_seeds.py` generates possible chitchat completions out of the possible candidates for each task-oriented utterance.
-
-`load_utts.py` loads the utterances for each dataset for comparisons
-
