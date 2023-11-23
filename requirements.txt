@@ -1,0 +1,4 @@
+lexical-diversity
+matplotlib
+nltk
+numpy
