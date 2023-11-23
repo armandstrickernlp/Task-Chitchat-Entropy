@@ -31,4 +31,4 @@ To reproduce comparison plots and results from the paper simply run the followin
 python compare_diversity_divergence.py
 ```
 
-This will generate the plots in the `plots` folder.
+This will generate the plots in a `plots` folder.
