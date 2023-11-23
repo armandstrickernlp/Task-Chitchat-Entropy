@@ -1,5 +1,4 @@
-# ENHANCING TASK-ORIENTED DIALOGUES WITH CHITCHAT: A COMPARATIVE STUDY BASED ON LEXICAL DIVERSITY AND DIVERGENCE
-
+# Enhancing Task-Oriented Dialogues with Chitchat: a Comparative Study Based on Lexical Diversity and Divergence
 
 ## Requirements:
 
