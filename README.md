@@ -34,4 +34,4 @@ python compare_diversity_divergence.py
 This will generate the plots in a `plots` directory.
 
 Code for computing metrics is in `metric_utils.py` and code for extracting utterances is in `load_uts.py`. 
-Note: In Accentor, several chitchat candidates are proposed for most utterances. Prior to extracting the Accentor utterances for analysis, we randomly pick a chitchat candidate when possible, using the `generate_accentor_seeds.py`.
+Note: In Accentor, several chitchat candidates are proposed for most utterances. Prior to extracting the Accentor utterances for analysis, we randomly pick a chitchat candidate when possible, using `generate_accentor_seeds.py`.
