@@ -12,13 +12,13 @@ This project uses Python 3.9+
 Create a virtual environment:
 
 ```bash
-conda create -n task_chitchat_div python=3.9
+conda create -n task_chitchat_ent python=3.9
 ```
 
 Install the requirements:
 ```bas
-git clone git@github.com:armandstrickernlp/Task_Chitchat_Diversity.git
-cd Task_Chitchat_Diversity
+git clone git@github.com:armandstrickernlp/Task-Chitchat-Entropy.git
+cd Task-Chitchat-Entropy
 pip install -r requirements.txt
 ```
 
