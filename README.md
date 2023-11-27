@@ -23,9 +23,7 @@ pip install -r requirements.txt
 ```
 
 ## Compare lexical diversity and divergence
-In Accentor, chitchat candidates are proposed for most utterances. Prior to loading the Acentor data for analysis, we randomly pick a chitchat candidate when possible. To reproduce this, simply change the path to the downloaded accentor data and choose the seed in `generate_accentor_seeds.py`. Rune the script with `python generate_accentor_seeds.py`.
-
-The serialized extracted utterances are made already available in the `utt_data` repository.  
+The serialized extracted utterances from each dataset are made available in the `utt_data` repository and are directly loaded in `compare_diversity_divergence.py`.
 
 To reproduce comparison plots and results from the paper, simply run the following command:
 
@@ -34,3 +32,6 @@ python compare_diversity_divergence.py
 ```
 
 This will generate the plots in a `plots` directory.
+
+Code for computing metrics is in `metric_utils.py` and code for extracting utterances is in `load_uts.py`. 
+Note: In Accentor, several chitchat candidates are proposed for most utterances. Prior to extracting the Accentor utterances for analysis, we randomly pick a chitchat candidate when possible, using the `generate_accentor_seeds.py`.
