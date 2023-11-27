@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 
 ## Compare lexical diversity and divergence
-Functions for extracting task and chitchat utterances are in the `load_utts.py` script. In Accentor, chitchat is presented via several candidates for each utterance. Therefore, prior to loading the data, we randomly pick a chitchat candidate to augment each turn using the `generate_accentor_seeds.py` script.  
+In Accentor, chitchat candidates are proposed for most utterances. Prior to loading the Acentor data for analysis, we randomly pick a chitchat candidate when possible. To reproduce this, simply change the path to the downloaded accentor data and choose the seed in `generate_accentor_seeds.py`. Rune the script with `python generate_accentor_seeds.py`.
 
 The serialized extracted utterances are made already available in the `utt_data` repository.  
 
