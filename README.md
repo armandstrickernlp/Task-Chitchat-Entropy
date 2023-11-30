@@ -1,7 +1,7 @@
 # Enhancing Task-Oriented Dialogues with Chitchat: a Comparative Study Based on Lexical Diversity and Divergence
 This project compares the effect of enhancing task-oriented dialogues with different types of chitchat strategies. Metrics used are entropy-based and measure the lexical diversity and divergence brought on by the chitchat enhancements. The project relies on the following datasets: [Accentor](https://github.com/facebookresearch/accentor), [KETOD](https://github.com/facebookresearch/ketod) and [FusedChat](https://github.com/tomyoung903/FusedChat).  These datasets are all open-source and can be freely downloaded.  
 
-Accepted @ ASRU 2023. Publication to come !
+Accepted @ ASRU 2023. Publication to come ! ([arxiv](https://arxiv.org/abs/2311.14067))
 
 
 
