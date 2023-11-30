@@ -9,7 +9,7 @@ Accepted @ ASRU 2023. Publication to come ! ([arxiv](https://arxiv.org/abs/2311.
 
 This project uses Python 3.9+
 
-Create a virtual environment:
+Create and activate a virtual environment:
 
 ```bash
 conda create -n task_chitchat_ent python=3.9
